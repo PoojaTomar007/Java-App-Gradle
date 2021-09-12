@@ -33,7 +33,7 @@ dependencies {
 
 application {
     // Define the main class for the application.
-    mainClass = 'simple.gradle.java.app.App'
+    mainClassName = 'simple.gradle.java.app.App'
 }
 
 test {
