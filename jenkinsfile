@@ -7,6 +7,7 @@ pipeline {
             steps {
                 execGradle '--help'
                 execGradle("build")
+                execGradle("test")
             }
         }    
     }
