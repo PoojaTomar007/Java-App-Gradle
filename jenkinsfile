@@ -1,11 +1,13 @@
+@Library("jenkins-shared-lib") _
+
 pipeline {
     agent any
-    
     stages {
-    stage ('Build') {
-	steps {
-		sh '/opt/gradle/gradle-6.4.1/bin/gradle build'
+        stage('Build') {
+            steps {
+                execGradle '--help'
+                execGradle("build")
             }
-        }
+        }    
     }
 }
